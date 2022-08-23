@@ -57,11 +57,11 @@ print(f'Você retirou {vermelho} dados VERMELHO')
 for d in range(verde):
     face = random.randint(0,5)
     if face == 3:
-        tiro = tiro + 1
+        tiro += 1
     elif face == 0 or 2 or 5:
-        cerebro = cerebro + 1
+        cerebro += 1
     else:
-        passo = passo + 1
+        passo += 1
 for d in range(amarelo):
     face = random.randint(0,5)
     if face == 0 or 3:
