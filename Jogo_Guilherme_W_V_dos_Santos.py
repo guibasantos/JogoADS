@@ -41,11 +41,11 @@ lista_dados_sorteados = (random.sample(lista_dados,3))
 #Remoção dos dados sorteados
 for ns in lista_dados_sorteados:
     if ns <= 6:
-        verde = verde + 1
+        verde += 1
     elif 7 <= ns <= 10:
-        amarelo = amarelo + 1
+        amarelo += 1
     else:
-        vermelho = vermelho + 1
+        vermelho += 1
     for n in lista_dados:
         if n == ns:
             lista_dados.remove(ns)
@@ -65,17 +65,17 @@ for d in range(verde):
 for d in range(amarelo):
     face = random.randint(0,5)
     if face == 0 or 3:
-        tiro = tiro + 1
+        tiro += 1
     elif face == 2 or 5:
-        cerebro = cerebro + 1
+        cerebro += 1
     else:
-        passo = passo + 1
+        passo += 1
 for d in range(vermelho):
     face = random.randint(0,5)
     if face == 0 or 2 or 5:
-        tiro = tiro + 1
+        tiro += 1
     elif face == 3:
-        cerebro = cerebro + 1
+        cerebro += 1
     else:
-        passo = passo + 1
+        passo += 1
 print(f'Você teve {tiro} tiros {passo} passos e {cerebro} cerebros')
