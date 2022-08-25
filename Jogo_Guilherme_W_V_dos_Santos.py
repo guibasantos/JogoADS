@@ -42,6 +42,8 @@ while True:
         passo = 0
         cerebro = 0
         lista_dados_sorteados = []
+
+        #Sorteio dos três dados e suas respectivas cores
         while True:
             lista_dados_sorteados = (random.sample(lista_dados, 3))
             for ns in lista_dados_sorteados:
@@ -57,6 +59,8 @@ while True:
             print(f'Você retirou {verde} dados VERDE')
             print(f'Você retirou {amarelo} dados AMARELO')
             print(f'Você retirou {vermelho} dados VERMELHOS')
+
+            #Sorteio das faces de cada um dos dados
             for d in range(verde):
                 face = random.randint(0, 5)
                 if face == 0 or 2 or 5:
@@ -83,6 +87,8 @@ while True:
                     tiro += 1
             print(f'{lista_nomes[cont]} você teve {cerebro} cerebros e {tiro} tiros')
             print(f'{lista_nomes[cont]} você avançou {cerebro - tiro} casas')
+
+            #Condições de termino da rodada e do jogo
             if tiro == 3:
                 print('Você perdeu a sua vez!')
                 verde = 0
