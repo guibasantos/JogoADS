@@ -81,7 +81,8 @@ while True:
                     passo += 1
                 else:
                     tiro += 1
-            print(f'{lista_nomes[cont]} você andou {cerebro} e voltou {tiro}')
+            print(f'{lista_nomes[cont]} você teve {cerebro} cerebros e {tiro} tiros')
+            print(f'{lista_nomes[cont]} você avançou {cerebro - tiro} casas')
             if tiro == 3:
                 print('Você perdeu a sua vez!')
                 verde = 0
@@ -96,7 +97,7 @@ while True:
                     verde = 0
                     amarelo = 0
                     vermelho = 0
-                    lista_dados = lista_dados
+                    lista_dados = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
                     break
                 else:
                     verde = 0
